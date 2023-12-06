@@ -53,7 +53,7 @@ export default function Register() {
   const onSubmit = (data) => {
     try {
       axios
-        .post("http://localhost:9000/signin", data)
+        .post("https://redux-back.vercel.app/signin", data)
         .then((response) => {
           alert(response.data.message);
           console.log(response.data.message);

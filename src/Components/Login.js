@@ -24,7 +24,7 @@ export default function Login() {
     const handleSubmit = (e) => {
         e.preventDefault(); 
         try {
-            axios.post("http://localhost:9000/login", user)
+            axios.post("https://redux-back.vercel.app/login", user)
                 .then(response => {
                     alert(response.data.message);
                     navigate("/")
